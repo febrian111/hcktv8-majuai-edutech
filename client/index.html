@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Xcelent Champ Learning - Online 1-on-1 & AI-powered mentoring for students' homework and tests in Kuningan, Jawa Barat." />
+  <title>Xcelent Champ Learning | Online 1-on-1 & AI-Powered Mentoring</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-brand">
+        <span class="brand-icon">🎓</span>
+        <div class="brand-text">
+          <span class="brand-name">Xcelent Champ</span>
+          <span class="brand-tagline">Learning</span>
+        </div>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#hero">Beranda</a></li>
+        <li><a href="#services">Layanan</a></li>
+        <li><a href="#about">Tentang Kami</a></li>
+        <li><a href="#testimonials">Testimoni</a></li>
+        <li><a href="#location">Lokasi & Jam</a></li>
+        <li><a href="#contact">Kontak</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button type="button" class="btn btn-primary open-booking-btn">Book a Session</button>
+        <button type="button" class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section with Carousel -->
+  <header class="hero-section" id="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          <span>EduTech 1-on-1 & AI Mentoring Terdepan</span>
+        </div>
+        <h1 class="hero-title">
+          Kuasai PR & Raih Nilai Impian dengan <span class="gradient-text">1-on-1 & AI Mentoring</span>
+        </h1>
+        <p class="hero-description">
+          Bimbingan belajar privat online interaktif bersama mentor berpengalaman, didukung asisten AI cerdas 24/7 yang membantu memahami konsep belajar langkah demi langkah tanpa ribet.
+        </p>
+        <div class="hero-buttons">
+          <button type="button" class="btn btn-primary btn-lg open-booking-btn">
+            <span>Daftar Sesi Konsultasi</span>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+          <button type="button" class="btn btn-secondary btn-lg" id="hero-try-ai-btn">
+            <span>💬 Coba AI Study Tutor</span>
+          </button>
+        </div>
+
+        <!-- Trust Stats -->
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-num">98%</span>
+            <span class="stat-label">Peningkatan Nilai</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-num">1.500+</span>
+            <span class="stat-label">Siswa Terbimbing</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-num">4.9 / 5</span>
+            <span class="stat-label">Rating Kepuasan</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Carousel -->
+      <div class="hero-carousel-wrapper">
+        <div class="carousel" id="hero-carousel">
+          <div class="carousel-track" id="carousel-track">
+            <!-- Slide 1 -->
+            <div class="carousel-slide active">
+              <div class="slide-image-container">
+                <img src="images/hero_1.jpg" alt="1-on-1 Online Mentoring dengan Tutor Xcelent Champ" loading="eager" />
+                <div class="slide-overlay">
+                  <span class="slide-tag">1-on-1 Mentoring</span>
+                  <h3>Bimbingan Privat Interaktif</h3>
+                  <p>Fokus penuh pada materi sekolah dan tugas harian siswa.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-slide">
+              <div class="slide-image-container">
+                <img src="images/hero_2.jpg" alt="AI Homework Assistant membantu siswa memecahkan soal fisika" loading="lazy" />
+                <div class="slide-overlay">
+                  <span class="slide-tag">AI Study Co-Pilot</span>
+                  <h3>Bantuan Belajar Kapan Saja</h3>
+                  <p>AI memandu rumus dan alur penyelesaian tanpa langsung membocorkan jawaban.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="carousel-slide">
+              <div class="slide-image-container">
+                <img src="images/hero_3.jpg" alt="Siswa berprestasi merayakan kelulusan ujian dan nilai tinggi" loading="lazy" />
+                <div class="slide-overlay">
+                  <span class="slide-tag">Proven Results</span>
+                  <h3>Siap Sukses Ujian & UTBK</h3>
+                  <p>Latihan terarah yang meningkatkan kepercayaan diri siswa di kelas.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carousel Controls -->
+          <button type="button" class="carousel-btn prev-btn" id="carousel-prev" aria-label="Slide Sebelumnya">‹</button>
+          <button type="button" class="carousel-btn next-btn" id="carousel-next" aria-label="Slide Selanjutnya">›</button>
+
+          <!-- Carousel Indicators -->
+          <div class="carousel-dots" id="carousel-dots">
+            <button class="dot active" data-slide="0" aria-label="Slide 1"></button>
+            <button class="dot" data-slide="1" aria-label="Slide 2"></button>
+            <button class="dot" data-slide="2" aria-label="Slide 3"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Services Section -->
+  <section class="section services-section" id="services">
+    <div class="section-container">
+      <div class="section-header text-center">
+        <span class="section-subtitle">Layanan Unggulan Kami</span>
+        <h2 class="section-title">Solusi Lengkap Belajar & Persiapan Ujian</h2>
+        <p class="section-desc">
+          Kombinasi fleksibel bimbingan personal dari mentor ahli dan teknologi AI canggih untuk akselerasi belajar siswa.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon icon-purple">🎯</div>
+          <h3 class="service-title">1-on-1 Live Online Mentoring</h3>
+          <p class="service-desc">
+            Sesi tatap muka virtual privat bersama tutor lulusan universitas ternama. Disesuaikan dengan kurikulum sekolah, ritme belajar, dan kebutuhan spesifik siswa.
+          </p>
+          <ul class="service-features">
+            <li>Jadwal belajar fleksibel</li>
+            <li>Pembahasan tugas sekolah & PR</li>
+            <li>Pemberian tips & trik pemahaman cepat</li>
+          </ul>
+          <button type="button" class="service-link open-booking-btn">Pilih Layanan Ini →</button>
+        </div>
+
+        <div class="service-card highlight">
+          <div class="popular-badge">Paling Diminati</div>
+          <div class="service-icon icon-blue">🤖</div>
+          <h3 class="service-title">AI-Powered Homework Assistant</h3>
+          <p class="service-desc">
+            Didukung model Gemini AI mutakhir yang dirancang khusus untuk memandu siswa memecahkan PR secara edukatif langkah demi langkah, tanpa menyuapi jawaban instan.
+          </p>
+          <ul class="service-features">
+            <li>Aktif 24 jam nonstop via floating widget</li>
+            <li>Panduan rumus bertahap (step-by-step)</li>
+            <li>Mencakup Matematika, IPA, dan Bahasa</li>
+          </ul>
+          <button type="button" class="service-link open-ai-widget-btn">Coba Chatbot AI Sekarang →</button>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon icon-emerald">📝</div>
+          <h3 class="service-title">Intensive Test & Exam Preparation</h3>
+          <p class="service-desc">
+            Program persiapan matang untuk Ujian Tengah/Akhir Semester, Asesmen Nasional, hingga seleksi masuk PTN impian (UTBK-SNBT) dengan bank soal teruji.
+          </p>
+          <ul class="service-features">
+            <li>Simulasi try out berkala & analisis skor</li>
+            <li>Bedah soal tipe HOTS (Higher Order Thinking)</li>
+            <li>Manajemen waktu pengerjaan soal ujian</li>
+          </ul>
+          <button type="button" class="service-link open-booking-btn">Pilih Layanan Ini →</button>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon icon-amber">📊</div>
+          <h3 class="service-title">Personalized Diagnostic & Progress Report</h3>
+          <p class="service-desc">
+            Pemetaan komprehensif kelemahan dan kekuatan topik belajar siswa, lengkap dengan laporan berkala untuk orang tua agar perkembangan belajar terpantau jelas.
+          </p>
+          <ul class="service-features">
+            <li>Rencana belajar yang dipersonalisasi</li>
+            <li>Laporan mingguan/bulanan transparan</li>
+            <li>Konsultasi evaluasi berkala dengan orang tua</li>
+          </ul>
+          <button type="button" class="service-link open-booking-btn">Pilih Layanan Ini →</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section class="section about-section" id="about">
+    <div class="section-container">
+      <div class="about-grid">
+        <div class="about-image-wrapper">
+          <img src="images/hero_3.jpg" alt="Tentang Xcelent Champ Learning" class="about-img" />
+          <div class="about-experience-badge">
+            <span class="exp-title">EduTech Terpercaya</span>
+            <span class="exp-subtitle">Kuningan & Seluruh Indonesia</span>
+          </div>
+        </div>
+        <div class="about-content">
+          <span class="section-subtitle">Tentang Xcelent Champ Learning</span>
+          <h2 class="section-title">Membangun Nalar Kritis & Keberanian Belajar Siswa</h2>
+          <p class="about-text">
+            <strong>Xcelent Champ Learning</strong> adalah perusahaan edukasi teknologi (EduTech) yang berfokus memberikan pendampingan belajar privat 1-on-1 dan asistensi berbasis kecerdasan buatan (AI) untuk membantu siswa SD, SMP, hingga SMA menguasai materi, menuntaskan PR, dan menembus ujian dengan hasil terbaik.
+          </p>
+          <p class="about-text">
+            Kami percaya bahwa belajar bukan sekadar menyalin jawaban, melainkan memahami proses logika di baliknya. Itulah mengapa setiap mentor dan AI tutor kami mengutamakan metode <em>guided discovery</em>—membimbing langkah demi langkah hingga siswa mampu menyelesaikan masalah secara mandiri.
+          </p>
+
+          <!-- Company Details Card -->
+          <div class="company-info-card">
+            <div class="info-row">
+              <span class="info-icon">📍</span>
+              <div>
+                <strong>Alamat Kantor:</strong>
+                <p>Jl. Wahana II 9, Cigugur, Kec. Cigugur, Kabupaten Kuningan, Jawa Barat 45552</p>
+              </div>
+            </div>
+            <div class="info-row">
+              <span class="info-icon">⏰</span>
+              <div>
+                <strong>Jam Operasional Kantor (Office Hours):</strong>
+                <p><span class="hours-highlight">Buka 08:00 WIB – Tutup 15:30 WIB</span> (08:00 AM – 03:30 PM)</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-cta">
+            <button type="button" class="btn btn-primary open-booking-btn">Konsultasi Gratis dengan Kami</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="section testimonials-section" id="testimonials">
+    <div class="section-container">
+      <div class="section-header text-center">
+        <span class="section-subtitle">Kisah Sukses Mereka</span>
+        <h2 class="section-title">Apa Kata Siswa, Guru, dan Orang Tua?</h2>
+        <p class="section-desc">
+          Testimoni nyata dari keluarga besar Xcelent Champ Learning yang telah merasakan dampak positif bimbingan kami.
+        </p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="testimonial-tabs">
+        <button type="button" class="tab-btn active" data-filter="all">Semua Testimoni</button>
+        <button type="button" class="tab-btn" data-filter="student">Siswa 🧑‍🎓</button>
+        <button type="button" class="tab-btn" data-filter="teacher">Guru 👨‍🏫</button>
+        <button type="button" class="tab-btn" data-filter="parent">Orang Tua 👨‍👩‍👧</button>
+      </div>
+
+      <div class="testimonials-grid" id="testimonials-grid">
+        <!-- Student Testimonial 1 -->
+        <div class="testimonial-card" data-category="student">
+          <div class="testimonial-header">
+            <div class="user-avatar bg-blue">AR</div>
+            <div>
+              <h4 class="user-name">Aditya Rizky</h4>
+              <p class="user-role">Siswa Kelas 12 SMA, Kuningan</p>
+            </div>
+          </div>
+          <div class="rating-stars">★★★★★</div>
+          <p class="testimonial-body">
+            "Dulu nilai Matematika dan Fisika saya mentok di KKM. Setelah 3 bulan ikut 1-on-1 di Xcelent Champ dan pakai AI chatbotnya buat bantu PR malam hari, nilai ujian sekolah saya naik ke 92! Tutornya asik banget dan nggak pernah bikin gugup."
+          </p>
+          <span class="category-tag student-tag">Siswa</span>
+        </div>
+
+        <!-- Student Testimonial 2 -->
+        <div class="testimonial-card" data-category="student">
+          <div class="testimonial-header">
+            <div class="user-avatar bg-pink">SN</div>
+            <div>
+              <h4 class="user-name">Syifa Nadia</h4>
+              <p class="user-role">Siswa Kelas 9 SMP, Cirebon</p>
+            </div>
+          </div>
+          <div class="rating-stars">★★★★★</div>
+          <p class="testimonial-body">
+            "Fitur AI Tutornya keren banget! Kalau aku nanya cara ngerjain soal aljabar, AI nggak langsung kasih jawabannya, tapi ngajarin step-by-step sampai aku bener-bener paham. Belajar mandiri jadi nggak frustrasi lagi."
+          </p>
+          <span class="category-tag student-tag">Siswa</span>
+        </div>
+
+        <!-- Teacher Testimonial 1 -->
+        <div class="testimonial-card" data-category="teacher">
+          <div class="testimonial-header">
+            <div class="user-avatar bg-purple">BP</div>
+            <div>
+              <h4 class="user-name">Bambang Prayitno, S.Pd.</h4>
+              <p class="user-role">Guru Matematika SMA Negeri</p>
+            </div>
+          </div>
+          <div class="rating-stars">★★★★★</div>
+          <p class="testimonial-body">
+            "Sebagai guru, saya sangat mengapresiasi metode Xcelent Champ Learning. Siswa-siswi saya yang ikut mentoring menunjukkan peningkatan nalar kritis dan pemahaman konsep yang kokoh, bukan hanya hafalan rumus cepat."
+          </p>
+          <span class="category-tag teacher-tag">Guru</span>
+        </div>
+
+        <!-- Teacher Testimonial 2 -->
+        <div class="testimonial-card" data-category="teacher">
+          <div class="testimonial-header">
+            <div class="user-avatar bg-indigo">DW</div>
+            <div>
+              <h4 class="user-name">Dra. Wulandari</h4>
+              <p class="user-role">Guru Fisika & Pembina Olimpiade Sains</p>
+            </div>
+          </div>
+          <div class="rating-stars">★★★★★</div>
+          <p class="testimonial-body">
+            "AI study helper mereka sangat terarah dan mendidik. Jarang ada chatbot edukasi yang disiplin memandu langkah demi langkah seperti mentor sungguhan. Sangat mendukung Kurikulum Merdeka!"
+          </p>
+          <span class="category-tag teacher-tag">Guru</span>
+        </div>
+
+        <!-- Parent Testimonial 1 -->
+        <div class="testimonial-card" data-category="parent">
+          <div class="testimonial-header">
+            <div class="user-avatar bg-emerald">IK</div>
+            <div>
+              <h4 class="user-name">Ibu Kartika Sari</h4>
+              <p class="user-role">Orang Tua Siswa Kelas 10, Kuningan</p>
+            </div>
+          </div>
+          <div class="rating-stars">★★★★★</div>
+          <p class="testimonial-body">
+            "Sebagai orang tua yang bekerja, saya sering kesulitan mendampingi anak mengerjakan PR yang rumit. Dengan Xcelent Champ, anak saya jadi lebih mandiri dan percaya diri. Tim adminnya di Cigugur juga ramah dan responsif saat jam kerja."
+          </p>
+          <span class="category-tag parent-tag">Orang Tua</span>
+        </div>
+
+        <!-- Parent Testimonial 2 -->
+        <div class="testimonial-card" data-category="parent">
+          <div class="testimonial-header">
+            <div class="user-avatar bg-amber">PH</div>
+            <div>
+              <h4 class="user-name">Pak Hendra Wijaya</h4>
+              <p class="user-role">Orang Tua Siswa Persiapan UTBK</p>
+            </div>
+          </div>
+          <div class="rating-stars">★★★★★</div>
+          <p class="testimonial-body">
+            "Laporan berkala hasil diagnostik sangat informatif. Saya jadi tahu persis bab mana yang anak saya kuasai dan bab mana yang masih butuh latihan ekstra. Investasi pendidikan terbaik untuk masa depan anak!"
+          </p>
+          <span class="category-tag parent-tag">Orang Tua</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location & Operating Hours Section -->
+  <section class="section location-section" id="location">
+    <div class="section-container">
+      <div class="location-card">
+        <div class="location-details">
+          <span class="section-subtitle">Kunjungi Kami</span>
+          <h2 class="section-title">Kantor Xcelent Champ Learning</h2>
+          <p class="location-desc">
+            Pusat operasional dan koordinasi mentoring kami berlokasi di Cigugur, Kabupaten Kuningan. Silakan berkunjung atau hubungi kami pada jam operasional untuk konsultasi kurikulum belajar putra-putri Anda.
+          </p>
+
+          <div class="location-info-list">
+            <div class="location-info-item">
+              <div class="info-badge">📍</div>
+              <div>
+                <strong>Alamat Lengkap:</strong>
+                <p>Jl. Wahana II 9, Cigugur, Kec. Cigugur, Kabupaten Kuningan, Jawa Barat 45552</p>
+              </div>
+            </div>
+
+            <div class="location-info-item">
+              <div class="info-badge">⏰</div>
+              <div>
+                <strong>Jam Buka Kantor (Office Hours):</strong>
+                <p><span class="badge-status open">Buka Setiap Hari Kerja</span></p>
+                <p class="hours-text"><strong>08:00 WIB – 15:30 WIB</strong> (8:00 AM – 3:30 PM)</p>
+              </div>
+            </div>
+
+            <div class="location-info-item">
+              <div class="info-badge">📞</div>
+              <div>
+                <strong>Kontak WhatsApp & Telepon:</strong>
+                <p><a href="https://wa.me/6281234567890" target="_blank" rel="noopener">+62 812-3456-7890</a> (Konsultasi Belajar)</p>
+              </div>
+            </div>
+
+            <div class="location-info-item">
+              <div class="info-badge">✉️</div>
+              <div>
+                <strong>Email Resmi:</strong>
+                <p><a href="mailto:info@xcelentchamplearning.com">info@xcelentchamplearning.com</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="location-map-visual">
+          <div class="map-card-inner">
+            <div class="map-header">
+              <span class="map-dot"></span>
+              <span>Peta Lokasi Cigugur, Kuningan</span>
+            </div>
+            <div class="map-placeholder">
+              <div class="pin-marker">📍</div>
+              <h4>Xcelent Champ Learning</h4>
+              <p>Jl. Wahana II 9, Cigugur, Kuningan, Jawa Barat 45552</p>
+              <span class="badge-time">Office: 8:00 AM - 3:30 PM</span>
+            </div>
+            <div class="map-footer">
+              <a href="https://maps.google.com/?q=Cigugur+Kuningan+Jawa+Barat" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
+                Buka di Google Maps ↗
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Book a Session Section -->
+  <section class="section contact-section" id="contact">
+    <div class="section-container">
+      <div class="contact-box">
+        <div class="contact-header text-center">
+          <span class="section-subtitle">Mulai Langkah Pertama</span>
+          <h2 class="section-title">Daftar Sesi Konsultasi & Mentoring Gratis</h2>
+          <p class="section-desc">
+            Diskusikan kebutuhan belajar, kesulitan tugas sekolah, atau target ujian siswa bersama konsultan akademik kami.
+          </p>
+        </div>
+
+        <form id="contact-booking-form" class="booking-form">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="student-name">Nama Siswa *</label>
+              <input type="text" id="student-name" name="studentName" placeholder="Contoh: Farhan Pratama" required />
+            </div>
+
+            <div class="form-group">
+              <label for="parent-phone">No. WhatsApp Orang Tua / Siswa *</label>
+              <input type="tel" id="parent-phone" name="phone" placeholder="Contoh: 081234567890" required />
+            </div>
+
+            <div class="form-group">
+              <label for="student-grade">Jenjang Pendidikan *</label>
+              <select id="student-grade" name="grade" required>
+                <option value="" disabled selected>Pilih Jenjang Sekolah</option>
+                <option value="SD">SD (Kelas 4-6)</option>
+                <option value="SMP">SMP (Kelas 7-9)</option>
+                <option value="SMA-10">SMA (Kelas 10)</option>
+                <option value="SMA-11">SMA (Kelas 11)</option>
+                <option value="SMA-12">SMA (Kelas 12)</option>
+                <option value="UTBK">Alumni / Persiapan UTBK-SNBT</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="mentoring-service">Pilihan Layanan *</label>
+              <select id="mentoring-service" name="service" required>
+                <option value="" disabled selected>Pilih Program Bimbingan</option>
+                <option value="1-on-1">1-on-1 Live Online Mentoring</option>
+                <option value="AI-Assistant">AI-Powered Homework Assistant</option>
+                <option value="Exam-Prep">Persiapan Ujian & UTBK Intensif</option>
+                <option value="Combo-Package">Paket Komplit (1-on-1 + AI Tutor)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="study-goal">Topik / Mata Pelajaran yang Ingin Dibantu</label>
+            <textarea id="study-goal" name="studyGoal" rows="3" placeholder="Misalnya: Persiapan ujian Matematika dan Fisika bab Dinamika Gerak..."></textarea>
+          </div>
+
+          <div class="form-actions text-center">
+            <button type="submit" class="btn btn-primary btn-lg">
+              <span>Kirim Pendaftaran Sesi</span>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+            </button>
+            <p class="form-privacy">🔒 Data Anda aman. Tim kami akan menghubungi via WhatsApp pada jam kerja (08:00 - 15:30 WIB).</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <div class="nav-brand">
+            <span class="brand-icon">🎓</span>
+            <div class="brand-text">
+              <span class="brand-name">Xcelent Champ</span>
+              <span class="brand-tagline">Learning</span>
+            </div>
+          </div>
+          <p class="footer-desc">
+            EduTech terdepan yang menyediakan bimbingan belajar 1-on-1 interaktif dan AI Study Co-Pilot untuk mendampingi PR dan ujian siswa hingga sukses.
+          </p>
+          <div class="footer-badge">
+            <span>📍 Cigugur, Kuningan, Jawa Barat</span>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigasi</h4>
+          <ul>
+            <li><a href="#hero">Beranda</a></li>
+            <li><a href="#services">Layanan</a></li>
+            <li><a href="#about">Tentang Kami</a></li>
+            <li><a href="#testimonials">Testimoni</a></li>
+            <li><a href="#location">Lokasi & Jam Buka</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Program</h4>
+          <ul>
+            <li><a href="#services">1-on-1 Online Mentoring</a></li>
+            <li><a href="#services">AI Homework Assistant</a></li>
+            <li><a href="#services">Persiapan Ujian & UTBK</a></li>
+            <li><a href="#services">Laporan Diagnostik</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Jam Operasional Kantor</h4>
+          <p class="footer-hours"><strong>Buka:</strong> 08:00 WIB</p>
+          <p class="footer-hours"><strong>Tutup:</strong> 15:30 WIB</p>
+          <p class="footer-sub">(08:00 AM – 03:30 PM)</p>
+          <p class="footer-address">Jl. Wahana II 9, Cigugur, Kuningan 45552</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Xcelent Champ Learning. All Rights Reserved.</p>
+        <p>Bimbingan Belajar 1-on-1 & AI Mentoring EduTech.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======================================================== -->
+  <!-- FLOATING CHATBOT WIDGET (Connected to /api/chat + LocalStorage) -->
+  <!-- ======================================================== -->
+  <div class="floating-chat-container" id="floating-chat-container">
+    <!-- Floating Chatbot Window -->
+    <div class="chat-widget" id="chat-widget" aria-hidden="true">
+      <div class="chat-widget-header">
+        <div class="widget-header-left">
+          <div class="widget-avatar">🤖</div>
+          <div>
+            <h3 class="widget-title">Gemini AI Study Tutor</h3>
+            <p class="widget-status"><span class="status-pulse"></span> Siap bantu PR & ujian</p>
+          </div>
+        </div>
+        <div class="widget-header-actions">
+          <button type="button" id="clear-chat-btn" class="widget-btn-clear" title="Hapus riwayat obrolan">
+            Hapus Riwayat
+          </button>
+          <button type="button" id="close-chat-btn" class="widget-btn-close" aria-label="Tutup jendela chat">
+            ✕
+          </button>
+        </div>
+      </div>
+
+      <!-- Quick Prompt Suggestions -->
+      <div class="chat-quick-prompts" id="quick-prompts">
+        <span class="prompt-chip" data-prompt="Bantu saya memahami soal aljabar: 2x + 8 = 20">📐 Aljabar</span>
+        <span class="prompt-chip" data-prompt="Jelaskan Hukum II Newton dengan contoh sehari-hari">⚡ Fisika Newton</span>
+        <span class="prompt-chip" data-prompt="Bagaimana proses fotosintesis pada tumbuhan?">🌿 Fotosintesis</span>
+        <span class="prompt-chip" data-prompt="Beri tips belajar efektif untuk persiapan ujian">💡 Tips Belajar</span>
+      </div>
+
+      <!-- Chat Messages Box -->
+      <div id="chat-box" class="chat-box" role="log" aria-live="polite"></div>
+
+      <!-- Chat Input Form -->
+      <form id="chat-form" class="chat-form">
+        <input 
+          type="text" 
+          id="user-input" 
+          placeholder="Tanyakan PR atau konsep belajar..." 
+          autocomplete="off" 
+          required 
+        />
+        <button type="submit" id="send-btn" aria-label="Kirim Pesan">
+          <span>Kirim</span>
+          <svg class="send-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+            <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+          </svg>
+        </button>
+      </form>
+    </div>
+
+    <!-- Floating Chat Launcher Button -->
+    <button type="button" class="chat-launcher-btn" id="chat-launcher-btn" aria-label="Buka AI Chatbot">
+      <div class="launcher-bubble-badge" id="launcher-badge">
+        <span>Tanya AI Tutor PR 💬</span>
+      </div>
+      <div class="launcher-icon">
+        <span class="icon-open">🤖</span>
+        <span class="icon-close">✕</span>
+      </div>
+    </button>
+  </div>
+
+  <!-- Booking Confirmation Modal -->
+  <div class="modal-backdrop" id="booking-modal" aria-hidden="true">
+    <div class="modal-card">
+      <button type="button" class="modal-close" id="modal-close-btn" aria-label="Tutup modal">✕</button>
+      <div class="modal-header">
+        <span class="modal-icon">🎉</span>
+        <h3>Konsultasi Sesi Berhasil Terjadwal!</h3>
+      </div>
+      <div class="modal-body">
+        <p>Terima kasih telah mempercayakan pendidikan bersama <strong>Xcelent Champ Learning</strong>.</p>
+        <div class="modal-info-box">
+          <p>📍 <strong>Kantor:</strong> Jl. Wahana II 9, Cigugur, Kuningan</p>
+          <p>⏰ <strong>Office Hours:</strong> 08:00 AM – 03:30 PM</p>
+          <p>📱 Konsultan kami akan menghubungi WhatsApp Anda dalam kurun waktu jam operasional.</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" id="modal-ok-btn">Baik, Mengerti</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-notification" id="toast" role="alert"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
